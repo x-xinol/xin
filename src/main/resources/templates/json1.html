@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var data = [{'name':'jim' , 'age':20} , {'name':'king' ,'age':26},{'name':'jge' , 'age':30}];
+        var jsonString = JSON.stringify(data);
+    </script>
+</head>
+<body>
+<p>这是一个请求页面</p>
+<form id="json" method="post" action="json">
+    <div>
+        <label>用户名</label>
+        <input type="text" name="username">
+    </div><div>
+    <label>密码</label>
+    <input type="password" name="password">
+</div>
+    <div>
+        <label>性别</label><br>
+        <div>
+            <input type="radio"  name="sex" value="M" checked="checked"/>男
+            <input type="radio"  name="sex" value="F"/>女
+        </div>
+    </div>
+    <div>
+        <label>年龄</label>
+        <input type="text" name="age">
+    </div>
+    <input type="submit" name="zhuce" value="注册">
+</form>
+</body>
+</html>
